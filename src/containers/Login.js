@@ -12,7 +12,7 @@ import {
 
 
 import LoginForm from '../components/LoginForm'
-import Base from '../components/tabs/Base'
+
 
 export default class Login extends Component{
 

@@ -1,5 +1,4 @@
 import { AppRegistry } from 'react-native';
-import Login from './src/containers/Login';
-import Ini from './src/components/tabs/Base'
+import App from './App'
 
-AppRegistry.registerComponent('auc_mobile', () => Login);
+AppRegistry.registerComponent('auc_mobile', () => App);

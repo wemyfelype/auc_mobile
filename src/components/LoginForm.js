@@ -1,29 +1,19 @@
-'use strict';
-
 import React, { Component } from 'react';
-
-import {
-  StyleSheet,
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity
-} from 'react-native';
-
-import {NavigationActions} from 'react-navigation'
-
-
-import Base from '../components/tabs/Base'
+import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
 
 
 class LoginForm extends Component {
 
-  logar(){
-      return <Base />
-  }
+  constructor(props) {
+    super(props);
   
+    this.state = {};
+  }
+
   render() {
+
     return (
+      
       <View style={styles.container}>
       	<TextInput 
       		placeholder='Usuário'
@@ -48,7 +38,7 @@ class LoginForm extends Component {
       		underlineColorAndroid='transparent' />
 
       	<TouchableOpacity style={styles.buttonContainer}
-          onPress={() => this.logar() }
+          onPress={ () => this.props.navigation.navigate('Tabs') }
           >
       		<Text style={styles.buttonText}>Logar</Text>
       	</TouchableOpacity>
